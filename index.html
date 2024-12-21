@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav id="desktop-nav">
         <div class="logo">Joyce Yang</div>
         <div>
@@ -18,15 +19,67 @@
         </div>
     </nav>
 
+    <!-- Intro Section -->
     <section id="intro-section">
         <img id="welcome-mobile-sketch-img" src="./assets/home/welcome-mobile-sketch.jpg" alt="Sketch of a welcome mobile screen">
-        <div class="section__text-container">
-            <h1 class="section__title">Hello~</h1>
-            <div class="section__paragraphs-container">
-                <p class="section__text__p1">I'm Joyce, a designer studying cognitive science at UC Berkeley.</p>
-                <p class="section__text__p1">Currently, I'm designing with the CalTech UI/UX Bootcamp.</p>
+        <div id="intro-text-container">
+            <h1 id="intro-title">Hello~</h1>
+            <div id="intro-paragraphs-container">
+                <p class="intro-text">I'm Joyce! I'm a designer studying cognitive science at UC Berkeley.</p>
+                <p class="intro-text">Currently, I'm designing with the CalTech UI/UX Bootcamp.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Work-Study Portal -->
+    <section id="projects-section">
+        <div class="project-container color-container-1">
+            <div class="project-img-container">
+                <img 
+                    src="./assets/home/work-study-cover.png" 
+                    alt="Redesign Work-Study Portal Mockup">
+            </div>
+            <h2 class="project-title">UC Berkeley Work-Study Portal</h2>
+            <p class="project-description-text">
+                Improving work-study job searching with an enhanced exploration experience.
+            </p>
+            <div class="project-buttons-container">
+                <button 
+                    class="button" 
+                    onclick="location.href='#work-study'">
+                    Case Study
+                </button>
+                <button 
+                    class="button" 
+                    onclick="location.href='#work-study'">
+                    Prototype
+                </button>
+            </div>
+        </div>
+
+        <!-- Minimalist Notes App -->
+        <div class="project-container color-container-2">
+            <div class="project-img-container">
+                <img 
+                    src="./assets/home/notes-app-cover.png" 
+                    alt="Notes App Mockup">
+            </div>
+            <h2 class="project-title">Minimalistic Notes App</h2>
+            <p class="project-description-text">
+                For quickly organizing to-do lists and superstar ideas. Case study coming soon!
+            </p>
+            <div class="project-buttons-container">
+                <button 
+                    class="button" 
+                    onclick="location.href='#notes-app'">
+                    Prototype
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <!-- add stuff here -->
     </section>
 
     <script src="script.js"></script>

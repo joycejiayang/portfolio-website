@@ -1,7 +1,7 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
     margin: 0;
@@ -9,14 +9,18 @@
 }
 
 :root {
-    --gray-text: #70778A;
+    --gray: #70778A;
     --gray-underline: #A3AABE;
     --bright-purple: #521BFA;
+    --pale-purple: #DED7FC;
+    --pale-blue: #C6D5FF;
+    --pale-pink: #F7CCE9;
 }
 
 body {
     font-family: "Quicksand", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    color: black;
 }
 
 html {
@@ -24,13 +28,8 @@ html {
 }
 
 h1 {
-    color: black;
-    font-family: "Merriweather", sans-serif;
-    font-weight: 700;
-}
-
-p {
-    color: black;
+    font-family: "Poppins";
+    font-weight: 600;
 }
 
 /* TRANSITION */
@@ -55,6 +54,7 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1rem;
+    font-weight: 500;
     flex-grow: 1;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-    color: var(--gray-text);
+    color: var(--gray);
     text-decoration: underline;
     text-underline-offset: 0.75rem;
     text-decoration-color: var(--gray-underline);
@@ -73,20 +73,22 @@ a:hover {
 }
 
 .logo {
+    font-family: "Poppins";
     font-size: 1.25rem;
-    flex-grow: 1;
+    flex: 1;
+    font-weight: 600;
 }
 
 .logo:hover {
     cursor: default;
 }
 
-/* SECTIONS (DESKTOP) */
+/* INTRO SECTION */
 
 #intro-section {
     display: flex;
     padding-top: 2rem;
-    padding-left: 4rem;
+    padding-left: 5rem;
     padding-right: 5rem;
     column-gap: 2rem;
     align-items: flex-end;
@@ -97,7 +99,7 @@ a:hover {
     
 }
 
-.section__text-container {
+#intro-text-container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -105,24 +107,116 @@ a:hover {
     padding-bottom: 1.5rem;
 }
 
-.section__paragraphs-container {
+#intro-paragraphs-container {
     display: flex;
     flex-direction: column;
-    row-gap: 0.25rem;
 }
 
-.section__title {
+#intro-title {
     font-size: 3rem;
 }
 
-.section__text__p1 {
-    font-size: 1.5rem;
+.intro-text {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* PROJECTS SECTION */
+#projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+
+.project-container {
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 1.75rem;
+    padding: 3rem 0rem 3.5rem 0rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.color-container-1 {
+    background-color: var(--pale-purple);
+}
+
+.color-container-2 {
+    background-color: var(--pale-pink);
+}
+
+.project-title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    padding: 0rem 4rem 0rem 4rem;
+}
+
+.project-description-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+.project-img-container {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.project-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.75rem 1.4rem;
+    color: white;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.project-buttons-container {
+    display: flex;
+    column-gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+/* FOOTER */
+#footer {
+    padding-bottom: 2rem;
 }
 
 /* CHANGES BASED ON SCREEN SIZE */
 
-@media screen and (max-width: 1041px) {
-    .section__paragraphs-container {
+/* @media screen and (max-width: 1041px) {
+    #intro-paragraphs-container {
         row-gap: 1.5rem;
     }
-}
+} */
+
+/** Should probably complete responsiveness of the intro section using javascript **/
