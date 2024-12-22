@@ -335,7 +335,7 @@ a:hover {
      .project-container {
         width: 100%;
         row-gap: 1.5rem;
-        padding-top: 2.5rem;
+        padding-top: 2.75rem;
         padding-bottom: 3rem;
     }
 
@@ -356,13 +356,3 @@ a:hover {
         padding-bottom: 1.5rem;
     }
 }
-
-/* CHANGES BASED ON SCREEN SIZE */
-
-/* @media screen and (max-width: 1041px) {
-    #intro-paragraphs-container {
-        row-gap: 1.5rem;
-    }
-} */
-
-/** Should probably complete responsiveness of the intro section using javascript **/
