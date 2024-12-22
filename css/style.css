@@ -205,10 +205,10 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 434px) {
     #welcome-mobile-sketch-img {
-        width: 9.5rem;
-        margin-top: -12px;
+        width: 9rem;
+        margin-top: -12rem;
     }
 }
 
