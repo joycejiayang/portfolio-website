@@ -72,14 +72,14 @@ a:hover {
     text-decoration-thickness: 1px;
 }
 
-.logo {
+#logo {
     font-family: "Poppins";
     font-size: 1.25rem;
     flex: 1;
     font-weight: 600;
 }
 
-.logo:hover {
+#logo:hover {
     cursor: default;
 }
 
@@ -217,7 +217,7 @@ a:hover {
 
 .button:hover {
     background-color: white;
-    border: 1px solid var(--gray);
+    border: 1px solid white;
     color: black;
     cursor: pointer;
 }
@@ -247,4 +247,20 @@ a:hover {
     display: flex;
     align-items: center;
     column-gap: 1rem;
+}
+
+#github-logo-container .github-logo {
+    display: block;
+}
+
+#github-logo-container:hover .github-logo {
+    display: none;
+}
+
+#github-logo-container .github-logo-hover {
+    display: none;
+}
+
+#github-logo-container:hover .github-logo-hover {
+    display: block;
 }
