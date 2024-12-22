@@ -125,24 +125,6 @@ a:hover {
     line-height: 1.5;
 }
 
-
-
-@media screen and (max-width: 640px) {
-    #intro-sentence1-container {
-        width: 80%;
-    }
-
-    #intro-sentence2-container {
-        width: 55%;
-    }
-
-    #welcome-mobile-sketch-img {
-        width: 9.5rem;
-        margin-top: -10rem;
-        margin-right: 0.5rem;
-    }
-}
-
 /* PROJECTS SECTION */
 #projects-section {
     display: flex;
@@ -237,13 +219,9 @@ a:hover {
 #footer {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    background-color: black;
     display: flex;
     justify-content: center;
-}
-
-.footer-text {
-    font-size: 1rem;
+    background-color: black;
     color: white;
 }
 
