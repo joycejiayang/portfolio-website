@@ -265,3 +265,13 @@ a:hover {
 #github-logo-container:hover .github-logo-hover {
     display: block;
 }
+
+#footer-text-align-right-container {
+    width: 10rem;
+    text-align: right;
+}
+
+#footer-text-align-left-container {
+    width: 10rem;
+    text-align: left;
+}
