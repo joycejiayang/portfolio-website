@@ -10,11 +10,14 @@
 
 :root {
     --gray: #70778A;
-    --gray-underline: #A3AABE;
+    --light-gray: #A3AABE;
     --bright-purple: #521BFA;
+    --bright-orange: #FF764B;
     --pale-purple: #DED7FC;
     --pale-blue: #C6D5FF;
     --pale-pink: #F7CCE9;
+    --pale-orange: #FFCBBA;
+    --pale-green: #B9EFDB;
 }
 
 body {
@@ -68,15 +71,15 @@ a:hover {
     color: var(--gray);
     text-decoration: underline;
     text-underline-offset: 0.75rem;
-    text-decoration-color: var(--gray-underline);
+    text-decoration-color: var(--light-gray);
     text-decoration-thickness: 1px;
 }
 
 #logo {
     font-family: "Poppins";
     font-size: 1.25rem;
-    flex: 1;
     font-weight: 600;
+    flex: 1;
 }
 
 #logo:hover {
@@ -170,7 +173,7 @@ a:hover {
 }
 
 .color-container-2 {
-    background-color: var(--pale-pink);
+    background-color: var(--pale-green);
 }
 
 .project-title {
