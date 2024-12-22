@@ -205,6 +205,13 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 480px) {
+    #welcome-mobile-sketch-img {
+        width: 9.5rem;
+        margin-top: -12px;
+    }
+}
+
 /* PROJECTS SECTION */
 #projects-section {
     display: flex;
@@ -223,7 +230,8 @@ a:hover {
     justify-content: center;
     text-align: center;
     row-gap: 1.75rem;
-    padding: 3rem 0rem 3.5rem 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -320,9 +328,15 @@ a:hover {
 }
 
 @media screen and (max-width: 640px) {
+    #projects-section {
+        row-gap: 1.5rem;
+    }
+
      .project-container {
         width: 100%;
-        row-gap: 1.25rem;
+        row-gap: 1.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
     }
 
     .project-description-text {
