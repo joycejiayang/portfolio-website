@@ -220,6 +220,7 @@ a:hover {
     border: 1px solid white;
     color: black;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .project-buttons-container {
