@@ -190,7 +190,8 @@ a:hover {
     }
 
     #welcome-mobile-sketch-img {
-        margin-top: -10.5rem;
+        width: 9.5rem;
+        margin-top: -10rem;
         margin-right: 0.5rem;
     }
 }
@@ -201,14 +202,20 @@ a:hover {
     }
 
     #intro-sentence2-container {
-        width: 50%;
+        width: 48%;
     }
 }
 
-@media screen and (max-width: 434px) {
+@media screen and (max-width: 449px) {
+    .intro-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 408px) {
     #welcome-mobile-sketch-img {
-        width: 9rem;
-        margin-top: -12rem;
+        width: 8.5rem;
+        margin-top: -11.5rem;
     }
 }
 
