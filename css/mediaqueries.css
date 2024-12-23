@@ -29,13 +29,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 842px) {
     .intro-text {
         font-size: 1.4rem;
     }
 }
 
 @media screen and (max-width: 696px) {
+    /* Swap order of content */
     #intro-section {
         flex-direction: row-reverse;
         flex-wrap: wrap-reverse;
@@ -101,7 +102,7 @@
     }
 }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 522px) {
     #welcome-mobile-sketch-img {
         margin-top: -11rem;
     }
@@ -119,20 +120,15 @@
 
 @media screen and (max-width: 408px) {
     #welcome-mobile-sketch-img {
-        margin-top: -11.5rem;
+        margin-top: -11.25rem;
     }
 }
 
 /* PROJECTS SECTION */
 @media screen and (max-width: 1024px) {
     #projects-section {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .project-container {
-        width: calc(50% - 0.75rem);
+        gap: 1.5rem;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
     }
 
     .project-title {
@@ -153,13 +149,8 @@
     }
 }
 
-@media screen and (max-width: 640px) {
-    #projects-section {
-        row-gap: 1.5rem;
-    }
-
-     .project-container {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .project-container {
         row-gap: 1.5rem;
         padding-top: 2.75rem;
         padding-bottom: 3rem;
@@ -168,6 +159,32 @@
     .project-description-text {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+
+    /* Projects all align in 1 column */
+    .project-1-span-3-container {
+        grid-column: 1;
+    }
+    
+    .project-4-span-4-container {
+        grid-column: 1;
+    }
+    
+    .project-1-span-4-container {
+        grid-column: 1;
+    }
+    
+    .project-5-span-3-container {
+        grid-column: 1;
+    }    
+
+    /* Swap order of work-study project and notes app project */
+    .proj-1 {
+        grid-row: 1;
+    }
+
+    .proj-2 {
+        grid-row: 2;
     }
 }
 

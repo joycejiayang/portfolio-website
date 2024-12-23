@@ -13,11 +13,12 @@
     --light-gray: #A3AABE;
     --bright-purple: #521BFA;
     --bright-orange: #FF764B;
-    --pale-purple: #DED7FC;
-    --pale-blue: #C6D5FF;
-    --pale-pink: #F7CCE9;
+    --pale-purple: #E1D7FC;
+    --pale-blue: #BDE3F1;
+    --pale-pink: #F4CEEC;
     --pale-orange: #FFCBBA;
-    --pale-green: #B9EFDB;
+    --pale-green: #BCF2CC;
+    --pale-yellow: #FEE5A0;
 }
 
 body {
@@ -127,35 +128,52 @@ a:hover {
 
 /* PROJECTS SECTION */
 #projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    row-gap: 2rem;
-    justify-content: space-between;
-    padding-bottom: 2rem;
+    display: grid;
+    gap: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 .project-container {
-    width: calc(50% - 1rem);
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    justify-content: center;
     text-align: center;
     row-gap: 1.75rem;
     padding-top: 3rem;
     padding-bottom: 3.5rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.color-container-1 {
+.project-1-span-3-container {
+    grid-column: 1 / span 3;
+}
+
+.project-4-span-4-container {
+    grid-column: 4 / span 4;
+}
+
+.project-1-span-4-container {
+    grid-column: 1 / span 4;
+}
+
+.project-5-span-3-container {
+    grid-column: 5 / span 3;
+}
+
+.pale-purple-container {
     background-color: var(--pale-purple);
 }
 
-.color-container-2 {
+.pale-green-container {
     background-color: var(--pale-green);
+}
+
+.pale-blue-container {
+    background-color: var(--pale-blue);
+}
+
+.pale-yellow-container {
+    background-color: var(--pale-yellow);
 }
 
 .project-title {
@@ -211,6 +229,7 @@ a:hover {
 .project-buttons-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 1rem;
     padding-top: 0.5rem;
 }
