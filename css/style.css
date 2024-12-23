@@ -161,19 +161,19 @@ a:hover {
 }
 
 .pale-purple-container {
-    background-color: var(--pale-purple);
+    background-color: #E1D7FC;
 }
 
 .pale-green-container {
-    background-color: var(--pale-green);
+    background-color: #BCF2CC;
 }
 
 .pale-blue-container {
-    background-color: var(--pale-blue);
+    background-color: #BDE3F1;
 }
 
 .pale-yellow-container {
-    background-color: var(--pale-yellow);
+    background-color: #FEE5A0;
 }
 
 .project-title {
