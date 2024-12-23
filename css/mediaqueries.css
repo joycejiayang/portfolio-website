@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 640px) {
     #intro-sentence1-container {
-        width: 80%;
+        width: 75%;
     }
 
     #intro-sentence2-container {
@@ -69,7 +69,7 @@
 
     #welcome-mobile-sketch-img {
         width: 9.5rem;
-        margin-top: -10rem;
+        margin-top: -12.5rem;
         margin-right: 0.5rem;
     }
 }
@@ -89,21 +89,21 @@
     }
 }
 
-@media screen and (max-width: 593px) {
+@media screen and (max-width: 576px) {
     #welcome-mobile-sketch-img {
         margin-top: -11.5rem;
     }
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 540px) {
     #welcome-mobile-sketch-img {
-        margin-top: -10.5rem;
+        margin-top: -12.5rem;
     }
 }
 
-@media screen and (max-width: 466px) {
+@media screen and (max-width: 422px) {
     #welcome-mobile-sketch-img {
-        margin-top: -12.5rem;
+        margin-top: -11rem;
     }
 }
 
@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 408px) {
     #welcome-mobile-sketch-img {
         margin-top: -11.5rem;
     }
