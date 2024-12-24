@@ -235,6 +235,17 @@ a:hover {
     padding-top: 0.5rem;
 }
 
+#color-mode-button {
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin: -0.4rem;
+}
+
+#color-mode-button:hover {
+    cursor: pointer;
+    background-color: #EEEEEE;
+}
+
 #safetrec-flyer-light-mode {
     display: block;
 }
