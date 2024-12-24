@@ -5,6 +5,16 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+
+    nav img {
+        height: 28px;
+        width: 28px;
+    }
+
+    #color-mode-button {
+        padding: 0.4rem;
+        margin: -0.4rem;
+    }
 }
 
 /* INTRO SECTION */
