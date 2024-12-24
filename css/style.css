@@ -238,7 +238,11 @@ a:hover {
 #color-mode-button {
     border-radius: 50%;
     padding: 0.5rem;
-    margin: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+nav img {
+    display: block;
 }
 
 #color-mode-button:hover {
