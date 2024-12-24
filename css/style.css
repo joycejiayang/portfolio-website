@@ -25,6 +25,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     color: black;
+    background-color: white;
 }
 
 html {
@@ -232,6 +233,14 @@ a:hover {
     justify-content: center;
     column-gap: 1rem;
     padding-top: 0.5rem;
+}
+
+#safetrec-flyer-light-mode {
+    display: block;
+}
+
+#safetrec-flyer-dark-mode {
+    display: none;
 }
 
 /* FOOTER */

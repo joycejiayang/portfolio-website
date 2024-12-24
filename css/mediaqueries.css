@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 593px) {
+    #intro-section {
+        padding-top: 1.5rem;
+    }
+
     #welcome-mobile-sketch-img {
         margin-top: -11.5rem;
     }

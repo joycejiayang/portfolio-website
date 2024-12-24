@@ -13,21 +13,23 @@
     <!-- NAV BAR -->
     <nav id="desktop-nav">
         <div id="logo">Joyce Yang</div>
-        <div>
+        <!-- <div style="padding-right: 1rem;">
             <ul class="nav-links">
-                <!-- <li>
+                <li>
                     <a href="https://drive.google.com/file/d/1qu8B8uN1nv1JRq0EBBgVDQsAXbu5WUnO/view?usp=sharing"
                     target="_blank" rel="noopener noreferrer">Resume</a>
-                </li> -->
+                </li>
             </ul>
-        </div>
+        </div> -->
+        <img id="dark-mode-button" src="assets/yellow-ball.png" alt="Click to switch to dark mode" onclick="darkmode()">
+        <img id="light-mode-button" src="assets/cyan-ball.png" alt="Click to switch to light mode" onclick="lightmode()" style="display: none;">
     </nav>
 
     <!-- INTRO -->
     <section id="intro-section">
         <img 
                 id="welcome-mobile-sketch-img" 
-                src="assets/home/welcome-mobile-sketch.jpg" 
+                src="assets/home/welcome-mobile-sketch.png" 
                 alt="Sketch of a welcome mobile screen">
         <div id="intro-text-container">
             <h1 id="intro-title">Hello~</h1>
@@ -110,11 +112,16 @@
             </div>
         </div>
 
-        <!-- SafeTREC 2023 Safety Facts -->
+        <!-- SafeTREC Flyer -->
         <div class="project-container project-5-span-3-container pale-yellow-container">
             <div class="project-img-container">
                 <img 
+                    id="safetrec-flyer-light-mode"
                     src="assets/home/safetrec-flyer-cover.png" 
+                    alt="SafeTREC Flyer Mockup">
+                <img 
+                    id="safetrec-flyer-dark-mode"
+                    src="assets/home/safetrec-flyer-cover-unsaturated.png" 
                     alt="SafeTREC Flyer Mockup">
             </div>
             <h2 class="project-title">SafeTREC Promotional Flyer</h2>
@@ -150,5 +157,8 @@
             <div id="footer-text-align-left-container">&copy; 2024 Joyce Yang</div>
         </div>
     </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>
