@@ -18,7 +18,7 @@
     --pale-pink: #F4CEEC;
     --pale-orange: #FFCBBA;
     --pale-green: #BCF2CC;
-    --pale-yellow: #FEE5A0;
+    --pale-yellow: #FDE7AB;
 }
 
 body {
@@ -173,7 +173,7 @@ a:hover {
 }
 
 .pale-yellow-container {
-    background-color: #FEE5A0;
+    background-color: #FDE7AB;
 }
 
 .project-title {
