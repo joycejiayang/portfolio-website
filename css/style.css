@@ -57,6 +57,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 2rem;
+    padding-right: 0.75rem;
     list-style: none;
     font-size: 1rem;
     font-weight: 500;
@@ -70,7 +71,7 @@ a {
 }
 
 a:hover {
-    color: var(--gray);
+    color: #70778A;
     text-decoration: underline;
     text-underline-offset: 0.75rem;
     text-decoration-color: var(--light-gray);
@@ -260,18 +261,16 @@ nav img {
 
 /* FOOTER */
 #footer {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     background-color: black;
     color: white;
 }
 
-#footer-elements-container {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
+#footer-first-child {
+    flex: 1;
 }
 
 #github-logo-container .github-logo {

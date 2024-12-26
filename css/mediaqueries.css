@@ -209,20 +209,30 @@
 }
 
 /* FOOTER */
-@media screen and (max-width: 440px) {
-    #footer-elements-container {
+@media screen and (max-width: 1034px) {
+    #footer {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer {
         flex-direction: column;
-        row-gap: 1rem;
-        justify-content: center;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
     }
 
-    #footer-text-align-right-container {
-        text-align: center;
+    #footer :nth-child(1) {
+        order: 3;
     }
-    
-    #footer-text-align-left-container {
-        text-align: center;
+
+    #footer :nth-child(2) {
+        order: 2;
+    }
+
+    #footer :nth-child(3) {
+        order: 1;
+    }
+
+    #footer :nth-child(4) {
+        order: 4;
     }
 }
