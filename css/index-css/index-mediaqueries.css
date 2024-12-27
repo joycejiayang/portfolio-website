@@ -1,0 +1,190 @@
+/* INTRO SECTION */
+@media screen and (max-width: 1250px) {
+    #intro-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    #intro-title {
+        font-size: 2.75rem;
+    }
+
+    .intro-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1139px) {
+    #intro-paragraphs-container {
+        row-gap: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 842px) {
+    .intro-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    /* Swap order of content */
+    #intro-section {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+        padding-left: 1.5rem;
+        padding-right: 3rem;
+    }
+
+    #welcome-mobile-sketch-img {
+        width: 10rem;
+        margin-top: -13rem;
+        margin-right: 0.5rem;
+    }
+
+    #intro-sentence1-container {
+        width: calc(60% + 2rem);
+    }
+
+    #intro-sentence2-container {
+        width: calc(60% + 0.5rem);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #intro-sentence1-container {
+        width: 75%;
+    }
+
+    #intro-sentence2-container {
+        width: 55%;
+    }
+
+    #welcome-mobile-sketch-img {
+        width: 9.5rem;
+        margin-top: -12.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #welcome-mobile-sketch-img {
+        width: 8.5rem;
+        margin-top: -10.5rem;
+    }
+
+    #intro-sentence1-container {
+        width: 100%;
+    }
+
+    #intro-sentence2-container {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 593px) {
+    #intro-section {
+        padding-top: 1.5rem;
+    }
+
+    #welcome-mobile-sketch-img {
+        margin-top: -11.5rem;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    #welcome-mobile-sketch-img {
+        margin-top: -11rem;
+    }
+}
+
+@media screen and (max-width: 522px) {
+    #welcome-mobile-sketch-img {
+        margin-top: -11rem;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    #welcome-mobile-sketch-img {
+        margin-top: -12rem;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    #welcome-mobile-sketch-img {
+        margin-top: -9.5rem;
+    }
+
+    .intro-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #welcome-mobile-sketch-img {
+        margin-top: -11.25rem;
+    }
+}
+
+/* PROJECTS SECTION */
+@media screen and (max-width: 1034px) {
+    #projects-section {
+        gap: 1.5rem;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .project-description-text {
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    .button {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        row-gap: 1.5rem;
+        padding-top: 2.75rem;
+        padding-bottom: 3rem;
+    }
+
+    .project-description-text {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* Projects all align in 1 column */
+    .project-1-span-3-container {
+        grid-column: 1;
+    }
+    
+    .project-4-span-4-container {
+        grid-column: 1;
+    }
+    
+    .project-1-span-4-container {
+        grid-column: 1;
+    }
+    
+    .project-5-span-3-container {
+        grid-column: 1;
+    }    
+
+    /* Swap order of work-study project and notes app project */
+    .proj-1 {
+        grid-row: 1;
+    }
+
+    .proj-2 {
+        grid-row: 2;
+    }
+}
