@@ -116,7 +116,27 @@ nav img {
     display: block;
 }
 
+@media screen and (max-width: 1024px) {
+    nav {
+        height: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    nav img {
+        height: 28px;
+        width: 28px;
+    }
+
+    #color-mode-button {
+        padding: 0.4rem;
+        margin-right: -0.4rem;
+    }
+}
+
+
 /* FOOTER */
+
 #footer {
     padding: 1.5rem 2rem 1.5rem 2rem;
     display: flex;
@@ -154,4 +174,51 @@ nav img {
 #footer-text-align-left-container {
     width: 10rem;
     text-align: left;
+}
+
+@media screen and (max-width: 1034px) {
+    #footer {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer :nth-child(1) {
+        order: 3;
+    }
+
+    #footer :nth-child(2) {
+        order: 2;
+    }
+
+    #footer :nth-child(3) {
+        order: 1;
+    }
+
+    #footer :nth-child(4) {
+        order: 4;
+    }
+}
+
+/* DARK MODE */
+
+.dark {
+    background-color: #161616;
+    color: #EEEEEE;
+}
+
+.dark #color-mode-button:hover {
+    background-color: #2E2E2E;
+}
+
+.dark #logo a {
+    color: white;
+}
+
+.dark #logo a:hover {
+    color: #70778A;
 }
