@@ -1,0 +1,66 @@
+.dark {
+    background-color: #2B2B2B;
+}
+
+.dark nav {
+    background-color: #161616;
+}
+
+.dark #project-header {
+    background: linear-gradient(to bottom, #161616, #2B2B2B); 
+}
+
+nav {
+    background-color: #E1D7FC;
+}
+
+#project-header {
+    padding-bottom: 2rem;
+    display: flex;
+    row-gap: 1rem;
+    background: linear-gradient(to bottom, #E1D7FC, white, white); 
+}
+
+#project-title-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2rem;
+    padding: 3rem 5rem 3rem;
+}
+
+.project-context {
+    display: flex;
+    gap: 1rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+#project-title-card :nth-child(4) {
+    padding: 2rem 0rem 6rem;
+}
+
+.project-metadata {
+    display: flex;
+    gap: 5rem;
+}
+
+.project-metadata div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#project-img-box img {
+    width: 140%;
+    float: right;
+}
+
+.small-header {
+    font-family: "Poppins";
+    font-weight: 600;
+}
