@@ -2,7 +2,7 @@
 
 #intro-section {
     display: flex;
-    padding-top: 7rem;
+    padding-top: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
     column-gap: 2rem;
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 1024px) {
     #intro-section {
-        padding-top: 6rem;
+        padding-top: 2rem;
     }
 }
 
@@ -127,7 +127,7 @@
 
 @media screen and (max-width: 593px) {
     #intro-section {
-        padding-top: 6.5rem;
+        padding-top: 2.5rem;
     }
 
     #welcome-mobile-sketch-img {
