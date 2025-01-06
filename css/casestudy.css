@@ -16,6 +16,7 @@ nav {
 #project-header {
     display: flex;
     row-gap: 1rem;
+    height: 100vh;
     position: sticky;
     top: 0;
     z-index: -2;
@@ -92,10 +93,11 @@ nav {
     #project-header {
         flex-direction: column;
         position: static;
+        height: auto;
     }
 
     #project-img-box {
-        position: sticky;
+        position: sticky; /* project image is sticky */
         top: 0;
         z-index: -1;
     }
@@ -132,6 +134,67 @@ nav {
     }
 }
 
+/* STORY */
+
+.story {
+    background: 
+        radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 1px),
+        radial-gradient(circle, rgba(0, 0, 0, 0.05) 1.5px, transparent 1.5px);
+    -webkit-mask:
+        conic-gradient(from -45deg at bottom,#000000,#F4F0FF 1deg 89deg,#0000 90deg) bottom/2rem 51% repeat-x,
+        conic-gradient(from 135deg at top   ,#000000,#F4F0FF 15deg 89deg,#0000 90deg) top   /2rem 51% repeat-x;
+    background-size: 1.5rem 1.5rem;
+    background-color: #F4F0FF;
+    padding: 3rem 2rem;
+}
+
+.dark .story {
+    background: none;
+    -webkit-mask: none;
+
+    clip-path: polygon(0 0,100% 70px,100% 100%,0 100%);
+
+    background-color: #111111;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.washi-header {
+    display: flex;
+    white-space: nowrap;
+    justify-content: flex-start;
+    width: 10rem;
+    height: 2.25rem;
+    background: 
+        repeating-linear-gradient(0deg,#521BFA, #521BFA 1px, transparent 1px, transparent 18px),
+        repeating-linear-gradient(90deg, #521BFA, #521BFA 1px, transparent 1px, transparent 18px),
+        linear-gradient(to right, #521BFA, #F4CEEC);
+        background-position: 0px 30px;
+    -webkit-mask:
+        conic-gradient(from   45deg at left,  #0000,#000 1deg 89deg,#0000 90deg) left /51% 1.5rem repeat-y,
+        conic-gradient(from -135deg at right, #0000,#000 1deg 89deg,#0000 90deg) right/51% 1.5rem repeat-y;
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    color: white;
+}
+
+.dark .washi-header {
+    background: none;
+    -webkit-mask: none;
+    height: 5rem;
+    text-shadow:
+        0.5px 0.5px 0px #E1D7FC,
+        -0.5px -0.5px 0px #E1D7FC,
+        0.5px 0.5px 0px #E1D7FC,
+        -0.5px -0.5px 0px #E1D7FC;
+    padding: 1rem 0rem 0rem 0rem;
+    width: 100%;
+}
+
+.dark .washi-header h2 {
+    color: #111111;
+    font-size: 3rem;
+}
+
 /* DARK MODE */
 
 .dark {
@@ -148,10 +211,4 @@ nav {
 
 .dark #project-img-box {
     background-color: #AFA7C3;
-}
-
-/* TEST */
-
-.story {
-    background-color: black;
 }
