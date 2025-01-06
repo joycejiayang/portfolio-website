@@ -35,6 +35,7 @@ html {
 h1 {
     font-family: "Poppins";
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .button {
@@ -180,7 +181,7 @@ nav img {
     text-align: left;
 }
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1024px) {
     #footer {
         padding: 1.5rem;
     }
@@ -217,10 +218,6 @@ nav img {
 
 .dark #color-mode-button:hover {
     background-color: #2E2E2E;
-}
-
-.dark #logo a {
-    color: white;
 }
 
 .dark #logo a:hover {
