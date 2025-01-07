@@ -157,23 +157,23 @@ nav img {
     color: white;
 }
 
-#footer-first-child {
+#footer :first-child {
     flex: 1;
 }
 
-#github-logo-container .github-logo {
+#github-logo-container :first-child {
     display: block;
 }
 
-#github-logo-container:hover .github-logo {
+#github-logo-container:hover :first-child {
     display: none;
 }
 
-#github-logo-container .github-logo-hover {
+#github-logo-container :nth-child(2) {
     display: none;
 }
 
-#github-logo-container:hover .github-logo-hover {
+#github-logo-container:hover :nth-child(2) {
     display: block;
 }
 
@@ -198,7 +198,7 @@ nav img {
         flex-direction: column;
     }
 
-    #footer :nth-child(1) {
+    #footer :first-child {
         order: 3;
     }
 
@@ -207,6 +207,7 @@ nav img {
     }
 
     #footer :nth-child(3) {
+        flex: 0;
         order: 1;
     }
 
