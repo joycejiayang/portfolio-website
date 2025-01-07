@@ -86,21 +86,21 @@ nav {
     padding-right: 2rem;
 }
 
-.nav-links {
+#nav-links {
     display: flex;
-    gap: 2rem;
+    align-items: baseline;
+    gap: 1.25rem;
     padding-right: 0.75rem;
     list-style: none;
     font-size: 1rem;
     font-weight: 500;
-    flex-grow: 1;
+    flex: 1;
 }
 
 #logo {
     font-family: "Poppins";
     font-size: 1.25rem;
     font-weight: 600;
-    flex: 1;
 }
 
 #logo a:hover {
@@ -110,6 +110,11 @@ nav {
 
 #logo:hover {
     cursor: default;
+}
+
+#sub-links {
+    display: flex;
+    gap: 1.25rem;
 }
 
 #color-mode-button {
@@ -207,8 +212,8 @@ nav img {
     }
 
     #footer :nth-child(3) {
-        flex: 0;
         order: 1;
+        flex: 0;
     }
 
     #footer :nth-child(4) {
