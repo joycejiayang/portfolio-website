@@ -167,6 +167,7 @@ nav img {
 }
 
 #github-logo-container :first-child {
+    max-width: 100%;
     display: block;
 }
 
@@ -175,6 +176,7 @@ nav img {
 }
 
 #github-logo-container :nth-child(2) {
+    max-width: 100%;
     display: none;
 }
 
