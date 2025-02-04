@@ -166,32 +166,12 @@ nav img {
     flex: 1;
 }
 
-#github-logo-container :first-child {
-    max-width: 100%;
-    display: block;
+#footer .github-logo {
+    opacity: 0.4;
 }
 
-#github-logo-container:hover :first-child {
-    display: none;
-}
-
-#github-logo-container :nth-child(2) {
-    max-width: 100%;
-    display: none;
-}
-
-#github-logo-container:hover :nth-child(2) {
-    display: block;
-}
-
-#footer-text-align-right-container {
-    width: 10rem;
-    text-align: right;
-}
-
-#footer-text-align-left-container {
-    width: 10rem;
-    text-align: left;
+#footer .github-logo:hover {
+    opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -215,7 +195,7 @@ nav img {
 
     #footer :nth-child(3) {
         order: 1;
-        flex: 0;
+        width: 32px;
     }
 
     #footer :nth-child(4) {
