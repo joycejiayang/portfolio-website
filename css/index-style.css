@@ -37,6 +37,15 @@
     line-height: 1.5;
 }
 
+.intro-text a {
+    color: #E7729C;
+    font-weight: 600;
+}
+
+.intro-text a:hover {
+    color: #F2B5CC;
+}
+
 @media screen and (max-width: 1250px) {
     #intro-section {
         padding-left: 4rem;
