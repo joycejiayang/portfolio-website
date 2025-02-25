@@ -159,6 +159,7 @@
 
     .intro-text {
         font-size: 1.25rem;
+        font-weight: 450;
     }
 }
 
@@ -172,7 +173,7 @@
     }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 393px) {
     #welcome-mobile-sketch-img {
         width: 7.5rem;
         margin-top: -11.25rem;
