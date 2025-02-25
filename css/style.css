@@ -75,6 +75,10 @@ img {
     width: 100%;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 /* HEADER NAVIGATION */
 
 nav {
@@ -206,7 +210,7 @@ nav img {
 /* DARK MODE */
 
 .dark {
-    background-color: #161616;
+    background-color: #191919;
     color: #EEEEEE;
 }
 
