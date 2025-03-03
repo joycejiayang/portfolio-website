@@ -19,6 +19,7 @@
     --pale-orange: #FFCBBA;
     --pale-green: #BCF2CC;
     --pale-yellow: #FDE7AB;
+    --pink: #E7729C;
 }
 
 body {
@@ -73,10 +74,6 @@ a {
 
 img {
     width: 100%;
-}
-
-.no-wrap {
-    white-space: nowrap;
 }
 
 /* HEADER NAVIGATION */
