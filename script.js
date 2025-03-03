@@ -1,24 +1,33 @@
-var darkModeButton = document.getElementById("dark-mode-button");
-var lightModeButton = document.getElementById("light-mode-button");
+const colorModeButton = document.getElementById("color-mode-button");
 
-if(localStorage.getItem("currTheme") === "dark") {
-    darkmode();
-}
-
-function darkmode() {
-    const theme = "dark";
-    document.body.classList.toggle(theme);
-    localStorage.setItem("currTheme", theme);
-
-    darkModeButton.style.display = "none";
-    lightModeButton.style.display = "block";
+function setUpColorModeButton() {
+    colorModeButton.addEventListener("click", function() {
+        if (document.body.classList.contains("dark")) {
+            lightmode();
+        } else {
+            darkmode();
+        }
+        document.body.classList.toggle("dark");
+    });
+    
 }
 
 function lightmode() {
-    const theme = "dark";
-    document.body.classList.toggle(theme);
+    let currButtonImg = colorModeButton.children[0];
+    let newButtonImg = document.createElement("img");
+    newButtonImg.src = "assets/cyan-ball.png";
+    newButtonImg.alt = "Click to switch to dark mode";
+    colorModeButton.replaceChild(newButtonImg, currButtonImg);
     localStorage.setItem("currTheme", "default");
-
-    lightModeButton.style.display = "none";
-    darkModeButton.style.display = "block";
 }
+
+function darkmode() {
+    let currButtonImg = colorModeButton.children[0];
+    let newButtonImg = document.createElement("img");
+    newButtonImg.src = "assets/purple-ball.png";
+    newButtonImg.alt = "Click to switch to light mode";
+    colorModeButton.replaceChild(newButtonImg, currButtonImg);
+    localStorage.setItem("currTheme", "dark");
+}
+
+setUpColorModeButton();
