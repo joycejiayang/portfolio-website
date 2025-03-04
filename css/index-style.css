@@ -301,6 +301,30 @@
     display: none;
 }
 
+@media screen and (min-width: 1700px) {
+    .project-1-span-4-container {
+        grid-column: 1;
+    }
+
+    .project-5-span-3-container {
+        grid-column: 2;
+    }
+
+    .project-1-span-3-container {
+        grid-column: 4;
+    }
+
+    .project-4-span-4-container {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .project-description-text {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
 @media screen and (max-width: 1034px) {
     #projects-section {
         gap: 1.5rem;
