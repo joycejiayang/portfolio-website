@@ -81,6 +81,12 @@ img {
     width: 100%;
 }
 
+@media screen and (max-width: 394px) {
+    .button {
+        font-size: 1.1rem;
+    }
+}
+
 /* HEADER NAVIGATION */
 
 nav {
@@ -89,6 +95,9 @@ nav {
     align-items: center;
     height: 5rem;
     padding: 0rem 2rem;
+    /* position: fixed;
+    width: calc(100% - 4rem);
+    background-color: rgba(255, 255, 255, 0.9); */
 }
 
 #logo {
@@ -145,6 +154,16 @@ nav {
     #color-mode-button img {
         height: 28px;
         width: 28px;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    #logo {
+        font-size: 1.1rem;
+    }
+
+    #sub-links {
+        font-size: 0.9rem;
     }
 }
 
