@@ -182,7 +182,7 @@
     }
 
     #intro-section {
-        padding-top: 1rem;
+        padding-top: 0.6rem;
         padding-left: 1.1rem;
         padding-right: 1.1rem;
     }
@@ -362,7 +362,7 @@
 
 @media screen and (max-width: 394px) {
     #projects-section {
-        padding: 0rem 1.1rem 1.1rem 1.1rem;
+        padding: 0rem 1.1rem 1.25rem 1.1rem;
         gap: 1.1rem;
     }
 
@@ -379,6 +379,10 @@
         font-size: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .intro-sentence2-container {
+        width: 100%;
     }
 }
 
