@@ -72,6 +72,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline 0.75px;
+    text-underline-offset: 0.5rem;
+}
+
 img {
     width: 100%;
 }
@@ -80,22 +85,10 @@ img {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-#nav-links {
-    display: flex;
-    align-items: baseline;
-    gap: 1.25rem;
-    padding-right: 0.75rem;
-    list-style: none;
-    font-size: 1rem;
-    font-weight: 500;
-    flex: 1;
+    padding: 0rem 2rem;
 }
 
 #logo {
@@ -115,6 +108,7 @@ nav {
 
 #sub-links {
     display: flex;
+    align-items: center;
     gap: 1.25rem;
 }
 
@@ -129,25 +123,28 @@ nav {
     background-color: #EDEDED;
 }
 
-nav img {
+#color-mode-button img {
     display: block;
 }
 
 @media screen and (max-width: 1024px) {
     nav {
-        height: 4rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        height: 4.5rem;
+        padding: 0rem 1.5rem;
     }
 
-    nav img {
-        height: 28px;
-        width: 28px;
+    #sub-links {
+        gap: 1rem;
     }
 
     #color-mode-button {
         padding: 0.4rem;
         margin-right: -0.4rem;
+    }
+
+    #color-mode-button img {
+        height: 28px;
+        width: 28px;
     }
 }
 
@@ -215,6 +212,6 @@ nav img {
     background-color: #2E2E2E;
 }
 
-.dark #logo a:hover {
-    color: #70778A;
+.dark a {
+    color: #EEEEEE;
 }
