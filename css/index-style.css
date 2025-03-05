@@ -182,7 +182,7 @@
     }
 
     .intro-sentence2-container {
-        max-width: 70%;
+        max-width: calc(70% - 0.75rem);
     }
 
     #intro-paragraphs-container {
@@ -190,25 +190,28 @@
     }
 
     #intro-section {
-        padding-top: 0.6rem;
+        padding-top: 0.75rem;
         padding-left: 1.1rem;
     }
 
     #intro-text-container {
         row-gap: 0.75rem;
-        padding-bottom: 1.8rem;
     }
 
     #welcome-mobile-sketch-img {
-        width: 5rem;
+        width: 6rem;
         margin-top: -7rem;
         margin-right: -0.5rem;
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 335px) {
     #intro-section {
         padding-right: 1.5rem;
+    }
+
+    #intro-text-container {
+        padding-bottom: 2.5rem;
     }
 
     .intro-sentence2-container {
