@@ -178,13 +178,20 @@
     }
 
     .intro-text {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .intro-sentence2-container {
+        max-width: 70%;
+    }
+
+    #intro-paragraphs-container {
+        row-gap: 1.25rem;
     }
 
     #intro-section {
         padding-top: 0.6rem;
         padding-left: 1.1rem;
-        padding-right: 1.1rem;
     }
 
     #intro-text-container {
@@ -192,17 +199,24 @@
         padding-bottom: 1.8rem;
     }
 
-    #intro-paragraphs-container {
-        row-gap: 1.25rem;
+    #welcome-mobile-sketch-img {
+        width: 5rem;
+        margin-top: -7rem;
+        margin-right: -0.5rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #intro-section {
+        padding-right: 1.5rem;
     }
 
     .intro-sentence2-container {
-        width: 110%;
+        max-width: 100%;
     }
-
+    
     #welcome-mobile-sketch-img {
-        visibility: hidden;
-        height: 0;
+        display: none;
     }
 }
 
