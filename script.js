@@ -5,7 +5,7 @@ lightModeImg.src = "assets/cyan-ball.png";
 lightModeImg.alt = "Click to switch to dark mode";
 
 const darkModeImg = document.createElement("img");
-darkModeImg.src = "assets/purple-ball.png";
+darkModeImg.src = "assets/pink-ball.png";
 darkModeImg.alt = "Click to switch to light mode";
 
 function persistDarkMode() {
