@@ -242,20 +242,24 @@
     overflow: hidden;
 }
 
-.project-1-span-3-container {
-    grid-column: 1 / span 3;
-}
-
-.project-4-span-4-container {
-    grid-column: 4 / span 4;
-}
-
-.project-1-span-4-container {
+.first-project {
     grid-column: 1 / span 4;
 }
 
-.project-5-span-3-container {
-    grid-column: 5 / span 3;
+.second-project {
+    grid-column: 5 / span 2;
+}
+
+.third-project {
+    grid-column: 1 / span 2;
+}
+
+.fourth-project {
+    grid-column: 3 / span 2;
+}
+
+.fifth-project {
+    grid-column: 5 / span 2;
 }
 
 .pale-purple-container {
@@ -272,6 +276,10 @@
 
 .pale-yellow-container {
     background-color: #FDE7AB;
+}
+
+.pale-pink-container {
+    background-color: #F4CEEC;
 }
 
 .project-title {
@@ -319,30 +327,13 @@
 }
 
 @media screen and (min-width: 1700px) {
-    .project-1-span-4-container {
-        grid-column: 1;
-    }
-
-    .project-5-span-3-container {
-        grid-column: 2;
-    }
-
-    .project-1-span-3-container {
-        grid-column: 4;
-    }
-
-    .project-4-span-4-container {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
     .project-description-text {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
 }
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1200px) {
     #projects-section {
         gap: 1.5rem;
         padding: 0rem 1.5rem 1.5rem 1.5rem;
@@ -362,7 +353,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .project-container {
         row-gap: 1.5rem;
         padding-top: 2.75rem;
@@ -375,21 +366,9 @@
     }
 
     /* Projects all align in 1 column */
-    .project-1-span-3-container {
+    .project-container {
         grid-column: 1;
-    }
-    
-    .project-4-span-4-container {
-        grid-column: 1;
-    }
-    
-    .project-1-span-4-container {
-        grid-column: 1;
-    }
-    
-    .project-5-span-3-container {
-        grid-column: 1;
-    }    
+    }  
 
     /* Swap order of work-study project and notes app project */
     .proj-3-4 {
@@ -447,6 +426,11 @@
 .dark .pale-yellow-container {
     background-color: #2B2B2B;
     border: 1.5px solid #DECB96;
+}
+
+.dark .pale-pink-container {
+    background-color: #2B2B2B;
+    border: 1.5px solid #F4CEEC;
 }
 
 .dark #safetrec-flyer-light-mode {
